@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<title>Yolitzin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<head>
+<style>
+
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+
+.bgimg, .bgimg2 ,.bgimg3,.bgimg4,.bgimg5{
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg {background-image: url("44.jpg")
+        }
+.bgimg2 {background-image: url("46.jpg")
+        }
+.bgimg3 {background-image: url("4340_bw.jpg")
+        }
+.bgimg4{background-image: url("4335.jpg")
+		}
+.bgimg5{background-image: url("45.jpg")
+		}
+
+        ul.topnav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #000;
+          position: fixed;
+          width: 100%;
+
+        }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+
+          display: inline-block;
+          color: #ffffff;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          transition: 1s;
+          font-size: 17px;
+        }
+
+        ul.topnav li a:hover {background-color: #000;}
+
+        ul.topnav li.icon {display: none;}
+
+        @media screen and (max-width:680px) {
+          ul.topnav li:not(:first-child) {display: none;}
+          ul.topnav li.icon {
+            float: right;
+            display: inline-block;
+            position:fixed;
+          }
+        }
+
+        @media screen and (max-width:680px) {
+          ul.topnav.responsive {position: fixed;}
+          ul.topnav.responsive li.icon {
+            position: fixed;
+            right: 0;
+            top: 0;
+          }
+          ul.topnav.responsive li {
+            float: none;
+            display: inline;
+          }
+          ul.topnav.responsive li a {
+            display: block;
+            text-align: left;
+          }
+        }
+        </style>
+        </head>
+<body>
+  <ul class="topnav" id="myTopnav">
+    <li><a class="w3-red" href="#home">Inicio</a></li>
+    <li><a class="w3-teal" href="#nosotros" onclick="myFunction()">Nosotros</a></li>
+    <li><a class="w3-blue" href="#filo" onclick="myFunction()">Filosofía</a></li>
+    <li><a class="w3-lime" href="#grados" onclick="myFunction()">Grados</a></li>
+    <li><a class="w3-yellow" href="#clases" onclick="myFunction()">Clases</a></li>
+    <li><a class="w3-orange" href="#contacto" onclick="myFunction()">Contacto</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>
+  </ul>
+
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+<div class="w3-wide bgimg" id="home">
+    <div class="w3-display-middle w3-text-white w3-border w3-padding-xlarge w3-center">
+      <h1 class="w3-jumbo">Yolitzin</h1>
+      <h2>Centro Eduacional</h2>
+      <h2><b>Ciclo 2017-2018</b></h2>
+    </div>
+</div>
+
+<div class="w3-padding-64 w3-center w3-wide"  id="nosotros">
+  <div class="w3-content  w3-card-8 w3-padding-large">
+    <h1 class="w3-center w3-text-grey"><b>Nosotros</b></h1>
+    <p>Creamos un ambiente en nuestra escuela que procura el desarrollo integral para nuestros niños. A lo largo de los años, hemos logrado formar alumnos íntegros, conscientes de su entorno, y con la confianza en si mismos para afrontar los retos de su vida desde su etapa formativa.</p>
+    <br>
+  </div>
+</div>
+<div class="w3-wide bgimg2">
+
+</div>
+<div class="w3-padding-64 w3-center w3-wide" id="filo">
+  <div class="w3-content  w3-card-8 w3-padding-large">
+    <h1 class="w3-text-grey"><b>Filosofía</b></h1>
+      <div class="w3-row w3-padding-16">
+        <div class="w3-third w3-center w3-padding-large">
+          <h2>Misión</h2>
+          <p>Brindar una educación de calidad con fomento de valores a través de la convivencia social, que contribuya al logro de habilidades y destrezas físicas e intelectuales que favorezcan el desarrollo de competencias en el alumno.</p>
+        </div>
+        <div class="w3-third w3-center w3-padding-large">
+          <h2>Visión</h2>
+          <p>Somos una Institución que genera ambientes de aprendizaje que contribuyen en los alumnos a lograr conocimientos, una identidad personar y pueden ser capaces de integrarse a una vida social.</p>
+
+        </div>
+        <div class="w3-third w3-center w3-padding-large">
+          <h2>Valores</h2>
+          <p>Respeto<br><br>Tolerancia<br><br>Colaboración<br><br>Amistad<br><br>Compromiso<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Background photo -->
+<div class="w3-wide bgimg3">
+
+</div>
+
+<div class="w3-padding-64 w3-center w3-wide"  id="grados">
+  <div class="w3-content  w3-card-8 w3-padding-large">
+    <h1 class="w3-text-grey"><b>Grados</b></h1>
+    <p><li>1° Preescolar</li><br><li>2° Preescolar</li><br><li>3° Preescolar</li></p>
+  </div>
+</div>
+<div class="w3-wide bgimg4">
+</div>
+<div class="w3-container w3-padding-64 w3-center w3-wide"  id="clases">
+  <div class="w3-content  w3-card-8 w3-padding-large">
+    <h1 class="w3-text-grey"><b>Clases</b></h1>
+    <p><li>Danza Folclórica</li><li>Educación Física</li><li>Cantos y Juegos</li><li>Psicomotricidad</li><li>Matemáticas</li><li>Religión</li><li>Español</li><li>Inglés</li></p>
+  </div>
+</div>
+<div class="w3-wide bgimg5">
+</div>
+<div class="w3-container w3-padding-64 w3-center w3-wide"  id="contacto">
+  <div class="w3-content  w3-card-8 w3-padding-large">
+    <h1 class="w3-padding-medium">Contacto</h1>
+    <div class="w3-row">
+      <div class="w3-half w3-padding-small">
+        <h2>Ubicación</h2>
+        <div id="map" style="width:100%;height:400px;background:grey"></div>
+
+       <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+       <script>
+      function myMap() {
+       var myCenter = new google.maps.LatLng(21.109276, -101.633580);
+       var mapCanvas = document.getElementById("map");
+       var mapOptions = {center: myCenter, zoom: 17};
+       var map = new google.maps.Map(mapCanvas, mapOptions);
+       var marker = new google.maps.Marker({position:myCenter});
+       marker.setMap(map);
+      }
+      </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script></div>
+      <h2 class="w3-padding-medium">Datos</h2>
+      <div class="w3-half w3-center w3-padding-large w3-border">
+
+        <!--<img src="logo.png">-->
+        <p>Av. Olímpica #225<br>Col. Villa Verde<br>León, Gto.<br>C.P.:37298<br>Tel.:(01)477 7714195</p>
+        <br>
+        <br>
+        <!--<button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-round w3-teal w3-opacity w3-hover-opacity-off" style="padding:8px 60px"> sadad</button>
+      -->
+    </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-zoom w3-padding-jumbo" style="max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-text-grey w3-margin">x</span>
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>Sincerely, John & Jane</i></p>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Made by jmmt47</a></p>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+</body>
+</html>
